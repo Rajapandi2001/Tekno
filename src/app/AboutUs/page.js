@@ -89,10 +89,10 @@ const AboutUs = () => {
               <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
                 <div className="relative w-96 h-auto border border-neutral-500 rounded-lg bg-neutral-50 p-6 z-50">
                   <h2 className="font-extrabold text-2xl text-violet-600 mb-2">
-                    Let's Build Something Amazing Together
+                    Lets Build Something Amazing Together
                   </h2>
                   <p className="text-neutral-700 mb-4">
-                    If you're looking to turn your ideas into reality, Tekno Spot is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.
+                    If you are looking to turn your ideas into reality, Tekno Spot is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.
                   </p>
                   {/* Form */}
                   <form onSubmit={handleSubmit}>
@@ -197,7 +197,7 @@ const AboutUs = () => {
               Let’s Build Something Amazing Together
             </h2>
             <p className="text-gray-500 mb-6">
-              If you're looking to turn your ideas into reality, <strong>Tekno Spot</strong> is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.</p>
+              If you are looking to turn your ideas into reality, <strong>Tekno Spot</strong> is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.</p>
             <Popup/>
           </div>
 
@@ -239,7 +239,7 @@ const AboutUs = () => {
               Our Vision
             </h4>
             <p className="text-[16px] leading-[19.36px] font-normal font-inter text-center lg:mb-28">
-              our vision is to empower businesses by building digital products that don't just meet industry standards but redefine them. We believe in creating applications that are not only functional but also delightful to use—tools that help businesses grow, connect with their audience, and achieve their biggest ambitions.
+              our vision is to empower businesses by building digital products that do not just meet industry standards but redefine them. We believe in creating applications that are not only functional but also delightful to use—tools that help businesses grow, connect with their audience, and achieve their biggest ambitions.
             </p>
           </div>
 

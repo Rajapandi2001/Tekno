@@ -44,10 +44,10 @@ function Popup() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="relative w-96 h-auto border border-neutral-500 rounded-lg bg-neutral-50 p-6 z-50">
             <h2 className="font-extrabold text-2xl text-violet-600 mb-2">
-              Let's Build Something Amazing Together
+              Lets Build Something Amazing Together
             </h2>
             <p className="text-neutral-700 mb-4">
-              If you're looking to turn your ideas into reality, Tekno Spot is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.
+              If you are looking to turn your ideas into reality, Tekno Spot is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.
             </p>
             {/* Form */}
             <form onSubmit={handleSubmit}>
