@@ -60,9 +60,9 @@ const Footer = () => {
                         <a href="https://www.youtube.com/@Tekno_Spot" className="text-white hover:text-black bg-[#fbfbfb22] rounded-full px-2 py-2" aria-label="YouTube">
                             <FontAwesomeIcon icon={faYoutube} size="lg" />
                         </a>
-                        <a href="/" className="text-white hover:text-black bg-[#fbfbfb22] rounded-full px-2 py-2" aria-label="LinkedIn">
+                        <Link href="/" className="text-white hover:text-black bg-[#fbfbfb22] rounded-full px-2 py-2" aria-label="LinkedIn">
                             <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
