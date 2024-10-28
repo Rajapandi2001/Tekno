@@ -6,33 +6,28 @@ import { useRouter } from 'next/navigation';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null); // Track which dropdown is active
+  const [activeDropdown, setActiveDropdown] = useState(null); // Track active dropdown for desktop
+  const [mobileDropdown, setMobileDropdown] = useState(null); // Track active dropdown for mobile
   const router = useRouter();
 
   const handleNavToggle = () => {
     setNav((prev) => !prev);
-    setDropdownVisible(false); // Close dropdown when nav is toggled
-    setActiveDropdown(null); // Reset active dropdown
+    setActiveDropdown(null);
+    setMobileDropdown(null);
   };
 
   const handleDropdownToggle = (id) => {
-    if (activeDropdown === id) {
-      // If the dropdown is already active, close it
-      setActiveDropdown(null);
-    } else {
-      setActiveDropdown(id); // Set the active dropdown
-    }
+    setActiveDropdown((prev) => (prev === id ? null : id));
   };
 
-  const closeAllMenus = () => {
-    setNav(false);
-    setDropdownVisible(false);
-    setActiveDropdown(null); // Reset active dropdown
+  const handleMobileDropdownToggle = (id) => {
+    setMobileDropdown((prev) => (prev === id ? null : id));
   };
 
   const handleNavClick = (path) => {
-    closeAllMenus();
+    setNav(false);
+    setActiveDropdown(null);
+    setMobileDropdown(null);
     router.push(path);
   };
 
@@ -63,30 +58,38 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <ul className='hidden md:flex font-medium z-10'>
-          {navItems.map(item => (
+          {navItems.map((item) => (
             <li
               key={item.id}
               className='p-4 m-2 cursor-pointer duration-300 font-semibold hover:text-white relative'
               onClick={item.hasDropdown ? () => handleDropdownToggle(item.id) : () => handleNavClick(item.path)}
               role="menuitem"
-              aria-label={item.text}
+              aria-haspopup={item.hasDropdown}
+              aria-expanded={activeDropdown === item.id}
             >
               <div className="flex items-center">
                 {item.text}
                 {item.hasDropdown && <AiOutlineDown className='ml-2' />}
               </div>
+
               {/* Dropdown for "Company" */}
               {item.hasDropdown && activeDropdown === item.id && (
-                <ul className='absolute top-full left-0 bg-white shadow-md rounded-md mt-2 py-2 z-20 transition-opacity duration-200 ease-in-out opacity-100'>
+                <ul className='absolute top-full left-0 bg-white shadow-md rounded-md mt-2 py-2 z-20 w-40'>
                   <li
-                    className='px-10 py-2 cursor-pointer hover:bg-gray-200 hover:text-black'
-                    onClick={() => handleNavClick('/AboutUs')}
+                    className='px-4 py-2 cursor-pointer hover:bg-gray-200 text-black'
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNavClick('/AboutUs');
+                    }}
                   >
                     About Us
                   </li>
                   <li
-                    className='px-10 py-2 cursor-pointer hover:bg-gray-200 hover:text-black'
-                    onClick={() => handleNavClick('/Career')}
+                    className='px-4 py-2 cursor-pointer hover:bg-gray-200 text-black'
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNavClick('/Career');
+                    }}
                   >
                     Career
                   </li>
@@ -103,7 +106,7 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         <ul
-          className={`${nav ? 'z-50 fixed' : 'fixed left-[-100%]'} md:hidden top-0 left-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500`}
+          className={`${nav ? 'z-50 fixed' : 'fixed left-[-100%]'} md:hidden top-0 left-0 w-[60%] h-full border-r border-r-gray-100 bg-cyan-900 ease-in-out duration-500`}
         >
           {/* Mobile Logo */}
           <div onClick={() => handleNavClick('/')} className='cursor-pointer'>
@@ -111,30 +114,38 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation Items */}
-          {navItems.map(item => (
+          {navItems.map((item) => (
             <li
               key={item.id}
-              className='p-4 border-b rounded-xl font-medium duration-300 hover:text-black cursor-pointer border-gray-600 relative'
-              onClick={item.hasDropdown ? () => handleDropdownToggle(item.id) : () => handleNavClick(item.path)}
+              className='p-4 border-b rounded-xl font-medium duration-300 hover:text-black cursor-pointer border-gray-100 relative'
+              onClick={item.hasDropdown ? () => handleMobileDropdownToggle(item.id) : () => handleNavClick(item.path)}
               role="menuitem"
-              aria-label={item.text}
+              aria-haspopup={item.hasDropdown}
+              aria-expanded={mobileDropdown === item.id}
             >
               <div className="flex items-center">
                 {item.text}
-                {item.hasDropdown && <AiOutlineDown className='ml-2' />}
+                {item.hasDropdown && <AiOutlineDown className='ml-16' />}
               </div>
+
               {/* Mobile Dropdown for "Company" */}
-              {item.hasDropdown && activeDropdown === item.id && (
+              {item.hasDropdown && mobileDropdown === item.id && (
                 <ul className='bg-white rounded-md mt-2 py-2 z-20'>
                   <li
                     className='px-6 py-2 cursor-pointer hover:bg-gray-200'
-                    onClick={() => handleNavClick('/AboutUs')}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNavClick('/AboutUs');
+                    }}
                   >
                     About Us
                   </li>
                   <li
                     className='px-6 py-2 cursor-pointer hover:bg-gray-200'
-                    onClick={() => handleNavClick('/Career')}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNavClick('/Career');
+                    }}
                   >
                     Career
                   </li>

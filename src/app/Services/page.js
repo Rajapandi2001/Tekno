@@ -76,7 +76,7 @@ const ServicesSection = () => (
                 <h3 className="font-bold text-red-500 text-xl lg:text-2xl ">Tekno Spot</h3>
                 <div data-aos="fade-up">
                     <h1 className="font-bold text-2xl lg:text-3xl ">Featured Services</h1>
-                    <p className="text-white max-w-md md:max-w-[650px]">
+                    <p className="text-white text-lg max-w-md md:max-w-[650px]">
                         We combine business expertise with technology to build high-impact applications and grow your Digital Footprint.
                     </p>
                 </div>
