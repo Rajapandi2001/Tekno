@@ -1,40 +1,51 @@
 "use client";
 import Clients from "@/components/Clients";
 import ServicesSection from "@/components/ServicesSection";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
 export default function Home() {
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <>
       {/* Main Section with Text and Image */}
-      <div className="flex justify-center items-center bg-green-200">
+      <div className=" flex justify-center items-center relative w-full  h-[550px] overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover  bg-black bg-opacity-50"
+        >
+          <source src="/7101913-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag. Please update your browser.
+        </video>
         <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-[1350px] lg:h-[500px] px-4 py-6">
           {/* Left Text Section */}
           <div data-aos="fade-right" className="md:w-[800px] text-center md:text-left">
-            <h3 className='text-xl md:text-4xl font-bold text-black mb-2 leading-tighT'>
+            <h3 className="text-xl md:text-4xl font-bold text-white mt-3 mb-2 leading-tighT">
               Tekno Spot builds Applications that get Trending in the Digital World
             </h3>
-            <p className="text-lg text-black mb-4">
+            <p className="text-md lg:text-lg text-white mb-4">
               WE understand the power of user experience design and employ cutting-edge strategies to make your website and application intuitive, engaging, and downright addictive.
             </p>
             {/* Button to show the form */}
             <div className="flex justify-center md:justify-start lg:ml-52">
               <button
                 onClick={() => (window.location.href = 'tel:+917604921773')}
-                className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group shadow-lg"
+                className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 hover:bg-black rounded-lg group shadow-lg"
               >
-                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                </span>
-                <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4">
-                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
+                {/* Your button inner content here */}
                 <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
                   Contact Us
                 </span>
               </button>
             </div>
-
-
           </div>
 
           {/* Right Image Section */}
@@ -46,7 +57,8 @@ export default function Home() {
             />
           </div>
         </section>
-      </div>
+        
+        </div>
 
       {/* Featured Services Section */}
       <div className="flex flex-col items-center text-center px-4 mt-5 overflow-hidden">
@@ -60,7 +72,7 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <div className='overflow-hidden'>
+      <div className="overflow-hidden">
         <ServicesSection />
       </div>
 
@@ -68,7 +80,7 @@ export default function Home() {
       <div className="text-center">
         <h1 className="font-bold text-red-500 text-2xl mb-4 py-10">Some of Our Clients</h1>
       </div>
-      <div className='overflow-hidden'>
+      <div className="overflow-hidden">
         <Clients />
       </div>
 

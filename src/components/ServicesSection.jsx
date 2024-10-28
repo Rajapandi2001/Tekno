@@ -2,31 +2,37 @@
 import React from 'react';
 const services = [
     {
+        id: 1,
         imageUrl: 'img/web-development-DeGyxk2x.png',
         title: 'Web Development',
         description: 'Building and maintaining websites for businesses and organizations',
     },
     {
+        id: 2,
         imageUrl: 'img/app-development-DiXxa6Wf.png',
         title: 'App Development',
         description: 'Creating mobile applications for smartphones and tablets',
     },
     {
+        id: 3,
         imageUrl: 'img/seo-BB_wdGq8.png',
         title: 'SEO',
         description: 'Improving a website’s ranking in SERPs to increase organic traffic',
     },
     {
+        id: 4,
         imageUrl: 'img/editing-CJGUGMYj.png',
         title: 'Video Editing',
         description: 'Transforming raw video footage into polished and engaging videos',
     },
     {
+        id: 5,
         imageUrl: 'img/social-media-marketing-B4qmekcR.png',
         title: 'Social Media Marketing',
         description: 'Creating campaigns to increase brand awareness, engagement, and leads',
     },
     {
+        id: 6,
         imageUrl: 'img/graphics-design-C0Cl6JmH.png',
         title: 'Graphics Design',
         description: 'Creating visuals such as logos, infographics & social media graphics',
@@ -37,7 +43,7 @@ const ServiceCard = ({ imageUrl, title, description }) => (
     <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="relative overflow-hidden w-60 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-3xl cursor-pointer bg-green-200 shadow-lg flex flex-col items-center justify-center text-center p-6 transition-all duration-500 hover:shadow-[0px_0px_30px_1px_#00000040]"
+        className="relative overflow-hidden w-60 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-3xl cursor-pointer bg-gray-300 shadow-lg flex flex-col items-center justify-center text-center p-6 transition-all duration-500 hover:shadow-[0px_0px_30px_1px_#00000040]"
     >
         <div className="z-10 absolute w-full h-full peer"></div>
         <div className="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-gray-100 transition-all duration-500"></div>
@@ -62,9 +68,9 @@ const ServiceCard = ({ imageUrl, title, description }) => (
 const ServicesSection = () => (
     <div className="container mx-auto py-10 mt-5 overflow-hidden px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
-            {services.map((service, index) => (
+            {services.map((service) => (
                 <ServiceCard
-                    key={index}
+                    key={service.id}
                     imageUrl={service.imageUrl}
                     title={service.title}
                     description={service.description}

@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#373f4b] text-gray-300 py-10 px-4 md:px-28 relative">
+        <footer className="bg-cyan-900 text-gray-300 py-10 px-4 md:px-28 relative">
             {/* Background Shapes */}
             <div className="shape absolute left-0 top-0 opacity-5 h-full w-1/3 md:w-1/2 lg:w-1/3 z-0">
                 <img src="img/footer-shape-left.png" alt="Background Shape Left" className="h-full w-full object-cover" />
