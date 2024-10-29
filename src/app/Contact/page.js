@@ -137,7 +137,7 @@ const Contact = () => {
                 What Can We Help <br className="hidden md:block" /> You With?
               </h1>
               <p className="text-base md:text-lg text-white">
-                Get in touch with us and let's create magic - together.
+                Get in touch with us and lets create magic - together.
               </p>
             </div>
           </div>
