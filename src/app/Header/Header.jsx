@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <>
       <title>Tekno Spot</title>
-      <link rel="icon" href="img/logo.png" />
+      <link rel="icon" href="img/logo .png" />
       <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 bg-cyan-900 text-black shadow-md relative'>
         {/* Background Shapes */}
         <div className="shape absolute left-0 top-0 opacity-10 h-full w-1/3 md:w-1/2 lg:w-1/3 z-0">
