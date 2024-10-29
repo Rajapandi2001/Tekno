@@ -69,7 +69,7 @@ const ServicesSection = () => (
     <>
 
         <section
-            className="flex items-center justify-center w-full bg-cover bg-center h-[250px] lg:h-[500px]"
+            className="flex items-center justify-center w-full bg-cover bg-center h-[300px] lg:h-[500px]  bg-black bg-opacity-5"
             style={{ backgroundImage: "url('img/photo-1553877522-43269d4ea984.avif')" }}
         >
             <div className="flex flex-col items-center text-center px-4 h-full mt-36 lg:mt-96 overflow-hidden">

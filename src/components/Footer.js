@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-cyan-900 text-gray-300 py-10 px-4 md:px-28 relative">
+        <footer className="bg-blue-950 text-gray-300 py-10 px-4 md:px-28 relative">
             {/* Background Shapes */}
             <div className="shape absolute left-0 top-0 opacity-5 h-full w-1/3 md:w-1/2 lg:w-1/3 z-0">
                 <img src="img/footer-shape-left.png" alt="Background Shape Left" className="h-full w-full object-cover" />
@@ -34,9 +34,9 @@ const Footer = () => {
                 <div>
                     <h2 className="text-white text-lg font-bold mb-3">Quick Links</h2>
                     <div className="space-y-2">
-                        <Link href="/"><p className="hover:text-white mb-2">Company</p></Link>
-                        <Link href="/PrivacyPolicy"><p className="hover:text-white mb-2">Privacy Policy</p></Link>
-                        <Link href="/AboutUs"><p className="hover:text-white mb-2">About Us</p></Link>
+                        <Link href="/"><p className="hover:text-black mb-2">Company</p></Link>
+                        <Link href="/PrivacyPolicy"><p className="hover:text-black mb-2">Privacy Policy</p></Link>
+                        <Link href="/AboutUs"><p className="hover:text-black mb-2">About Us</p></Link>
                     </div>
                 </div>
 
@@ -44,9 +44,9 @@ const Footer = () => {
                 <div>
                     <h2 className="text-white text-lg font-bold mb-3">Resources</h2>
                     <ul className="space-y-2">
-                        <Link href="/"><li className="hover:text-white mb-2">Support</li></Link>
-                        <Link href="/Contact"><li className="hover:text-white mb-2">Contact</li></Link>
-                        <Link href="/"><li className="hover:text-white mb-2">Terms</li></Link>
+                        <Link href="/"><li className="hover:text-black mb-2">Support</li></Link>
+                        <Link href="/Contact"><li className="hover:text-black mb-2">Contact</li></Link>
+                        <Link href="/"><li className="hover:text-black mb-2">Terms</li></Link>
                     </ul>
                 </div>
 

@@ -117,7 +117,7 @@ const Contact = () => {
         </div>
       )}
 
-      <div className="relative w-full  h-[550px] overflow-hidden ">
+      <div className="relative w-full  h-[500px] lg:h-[550px]  overflow-hidden ">
         {/* Video Background */}
         <video
           autoPlay
@@ -128,21 +128,30 @@ const Contact = () => {
           <source src="/7101913-uhd_2560_1440_25fps.mp4" type="video/mp4" />
           Your browser does not support the video tag. Please update your browser.
         </video>
-
-        {/* Overlay Content */}
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="relative z-10 flex flex-col items-start justify-center h-full p-4 md:p-8 space-y-4">
-          <div className='ml-4 md:ml-10'>
-            <h2 className="text-yellow-400 font-bold text-lg md:text-xl mb-2">Contact Us</h2>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">What Can We Help <br /> You With?</h1>
-            <p className="text-base md:text-lg text-white">
-              Get in touch with us and lets create magic - together.
-            </p>
+        <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-[1350px] lg:h-[500px] px-4 py-8 mx-auto">
+          {/* Left Text Section */}
+          <div data-aos="fade-right" className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+            <div className="ml-4 md:ml-10 lg:ml-20">
+              <h2 className="text-yellow-400 font-bold text-lg md:text-xl mb-2">Contact Us</h2>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
+                What Can We Help <br className="hidden md:block" /> You With?
+              </h1>
+              <p className="text-base md:text-lg text-white">
+                Get in touch with us and let's create magic - together.
+              </p>
+            </div>
           </div>
-          {/* Add any additional content here */}
-        </div>
+
+          {/* Right Image Section */}
+          <div data-aos="fade-left" className="flex justify-center md:w-1/2 h-auto">
+            <img
+              src="img/contact.svg"
+              alt="Digital Marketing Illustration"
+              className="w-full max-w-[450px] md:max-w-[600px] h-auto object-contain"
+            />
+          </div>
+        </section>
+
       </div>
 
 

@@ -42,7 +42,7 @@ const Header = () => {
     <>
       <title>Tekno Spot</title>
       <link rel="icon" href="img/logo .png" />
-      <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 bg-cyan-900 text-black shadow-md relative'>
+      <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 bg-blue-950 text-black shadow-md relative'>
         {/* Background Shapes */}
         <div className="shape absolute left-0 top-0 opacity-10 h-full w-1/3 md:w-1/2 lg:w-1/3 z-0">
           <img src="img/footer-shape-left.png" alt="Background Shape Left" className="h-full w-full object-cover" />
@@ -61,7 +61,7 @@ const Header = () => {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className='p-4 m-2 cursor-pointer duration-300 font-semibold hover:text-white relative'
+              className='p-4 m-2 cursor-pointer text-white duration-300 font-bold hover:text-black relative'
               onClick={item.hasDropdown ? () => handleDropdownToggle(item.id) : () => handleNavClick(item.path)}
               role="menuitem"
               aria-haspopup={item.hasDropdown}
@@ -106,7 +106,7 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         <ul
-          className={`${nav ? 'z-50 fixed' : 'fixed left-[-100%]'} md:hidden top-0 left-0 w-[60%] h-full border-r border-r-gray-100 bg-cyan-900 ease-in-out duration-500`}
+          className={`${nav ? 'z-50 fixed' : 'fixed left-[-100%]'} md:hidden top-0 left-0 w-[60%] h-full border-r border-r-gray-100 bg-blue-950 ease-in-out duration-500`}
         >
           {/* Mobile Logo */}
           <div onClick={() => handleNavClick('/')} className='cursor-pointer'>
@@ -130,7 +130,7 @@ const Header = () => {
 
               {/* Mobile Dropdown for "Company" */}
               {item.hasDropdown && mobileDropdown === item.id && (
-                <ul className='bg-white rounded-md mt-2 py-2 z-20'>
+                <ul className='bg-[#ffffff0d] rounded-md shadow-md mt-2 py-2 z-20'>
                   <li
                     className='px-6 py-2 cursor-pointer hover:bg-gray-200'
                     onClick={(e) => {

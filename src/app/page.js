@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Main Section with Text and Image */}
-      <div className=" flex justify-center items-center relative w-full  h-[550px] overflow-hidden">
+      <div className=" flex justify-center items-center relative w-full  h-[600px] overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay
@@ -28,7 +28,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-[1350px] lg:h-[500px] px-4 py-6">
           {/* Left Text Section */}
           <div data-aos="fade-right" className="md:w-[800px] text-center md:text-left">
-            <h3 className="text-xl md:text-4xl font-bold text-white mt-3 mb-2 leading-tighT">
+            <h3 className="text-xl md:text-4xl font-bold text-white mt-5 mb-2 leading-tighT">
               Tekno Spot builds Applications that get Trending in the Digital World
             </h3>
             <p className="text-md lg:text-lg text-white mb-4">
@@ -49,9 +49,9 @@ export default function Home() {
           </div>
 
           {/* Right Image Section */}
-          <div data-aos="fade-left" className="flex justify-center md:w-[450px] h-auto mt-5 md:mt-0">
+          <div data-aos="fade-left" className="flex justify-center md:w-[450px] h-auto  md:mt-0">
             <img
-              src="img/hero-img-BeYIOpPu.png"
+              src="img\career-side.01b1c64e.png"
               alt="Digital Marketing Illustration"
               className="w-full max-w-[450px] h-auto object-contain"
             />
