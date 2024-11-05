@@ -23,7 +23,7 @@ export default function Home() {
 
                     {/* Main Heading */}
                     <h1 className="relative z-10 mb-3 text-3xl font-bold md:text-4xl lg:text-5xl">
-                        Got What It Takes? We'd Like <br className="hidden md:block" /> To Hear From You.
+                        Got What It Takes? We did Like <br className="hidden md:block" /> To Hear From You.
                     </h1>
 
                     {/* Subheading */}
