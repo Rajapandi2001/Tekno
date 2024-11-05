@@ -3,6 +3,41 @@ import Head from 'next/head';
 export default function Home() {
     return (
         <>
+            <div className=" flex justify-center items-center relative w-full  h-[380px] lg:h-[460px] overflow-hidden">
+                {/* Video Background */}
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    className="absolute inset-0 w-full h-full object-cover  bg-black bg-opacity-50"
+                >
+                    <source src="\3163534-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag. Please update your browser.
+                </video>
+
+                <div className="relative flex flex-col items-center justify-center h-screen px-4 text-center text-white md:px-0">
+                    {/* Badge */}
+                    <div className="relative z-10 mb-4 px-3 py-1.5 rounded-full bg-[#ffffff1f] text-xs font-semibold uppercase tracking-widest text-white md:text-sm md:mb-6">
+                        <span className="text-lime-200">◉</span> Careers at Tekno Spot
+                    </div>
+
+                    {/* Main Heading */}
+                    <h1 className="relative z-10 mb-3 text-3xl font-bold md:text-4xl lg:text-5xl">
+                        Got What It Takes? We'd Like <br className="hidden md:block" /> To Hear From You.
+                    </h1>
+
+                    {/* Subheading */}
+                    <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
+                        We are on the lookout for talented individuals motivated by a desire to make a difference through technology.
+                    </p>
+
+                    {/* Call-to-action Button */}
+                    <button className="relative z-10 px-8 py-2 text-sm font-semibold text-white bg-yellow-500 rounded-full shadow-lg hover:bg-[#f3f044c3] transition md:text-lg md:px-12">
+                        Mail Us
+                    </button>
+                </div>
+
+            </div>
             <main
                 className="min-h-screen bg-gray-50 flex items-center justify-center bg-cover bg-center"
                 style={{ backgroundImage: "url('img/bg.svg')" }}

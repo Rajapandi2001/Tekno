@@ -198,7 +198,7 @@ const AboutUs = () => {
             </h2>
             <p className="text-gray-500 mb-6">
               If you are looking to turn your ideas into reality, <strong>Tekno Spot</strong> is here to make it happen. Whether you’re a startup aiming to disrupt the market or an established business seeking to strengthen your digital presence, we have the skills and passion to help you achieve your goals.</p>
-            <Popup/>
+            <Popup />
           </div>
 
           {/* Right Section - Services Cards */}

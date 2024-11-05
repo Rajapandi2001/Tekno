@@ -53,7 +53,7 @@ const Header = () => {
 
         {/* Logo */}
         <div onClick={() => handleNavClick('/')} className='cursor-pointer z-10'>
-          <img src="img/LOGO.svg" alt="Logo" className='w-40 h-20' />
+          <img src="img\Company logo 2.png" alt="Logo" className='w-48 h-20' />
         </div>
 
         {/* Desktop Navigation */}
@@ -100,7 +100,7 @@ const Header = () => {
         </ul>
 
         {/* Mobile Navigation Icon */}
-        <div onClick={handleNavToggle} className='block md:hidden cursor-pointer z-10' aria-label="Toggle Navigation">
+        <div onClick={handleNavToggle} className='block md:hidden cursor-pointer z-10 text-white' aria-label="Toggle Navigation">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
 
@@ -110,14 +110,14 @@ const Header = () => {
         >
           {/* Mobile Logo */}
           <div onClick={() => handleNavClick('/')} className='cursor-pointer'>
-            <img src="img/LOGO.svg" alt="Logo" className='w-40 h-20 mb-10 mt-5' />
+            <img src="img\Company logo 2.png" alt="Logo" className='w-40 h-20 mb-10 mt-5' />
           </div>
 
           {/* Mobile Navigation Items */}
           {navItems.map((item) => (
             <li
               key={item.id}
-              className='p-4 border-b rounded-xl font-medium duration-300 hover:text-black cursor-pointer border-gray-100 relative'
+              className='p-4 border-b rounded-xl font-medium duration-300 hover:text-white cursor-pointer border-gray-100 relative'
               onClick={item.hasDropdown ? () => handleMobileDropdownToggle(item.id) : () => handleNavClick(item.path)}
               role="menuitem"
               aria-haspopup={item.hasDropdown}

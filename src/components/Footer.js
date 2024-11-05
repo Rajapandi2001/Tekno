@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="space-y-4">
                     <div className="flex items-center mb-4">
                         <Link href="/">
-                            <img src="img/LOGO.svg" alt="TEKNO SPOT Logo" className="h-12 w-auto" />
+                            <img src="img\Company logo 2.png" alt="TEKNO SPOT Logo" className="h-20 w-40" />
                         </Link>
                     </div>
                     <p className="text-sm">
