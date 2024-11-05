@@ -117,7 +117,7 @@ const Header = () => {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className='p-4 border-b rounded-xl font-medium duration-300 hover:text-white cursor-pointer border-gray-100 relative'
+              className='p-4 border-b text-white rounded-xl font-medium duration-300 hover:text-black cursor-pointer border-gray-100 relative'
               onClick={item.hasDropdown ? () => handleMobileDropdownToggle(item.id) : () => handleNavClick(item.path)}
               role="menuitem"
               aria-haspopup={item.hasDropdown}
@@ -132,7 +132,7 @@ const Header = () => {
               {item.hasDropdown && mobileDropdown === item.id && (
                 <ul className='bg-[#ffffff0d] rounded-md shadow-md mt-2 py-2 z-20'>
                   <li
-                    className='px-6 py-2 cursor-pointer hover:bg-gray-200'
+                    className='px-6 py-2 cursor-pointer hover:bg-gray-200 text-white '
                     onClick={(e) => {
                       e.stopPropagation();
                       handleNavClick('/AboutUs');
@@ -141,7 +141,7 @@ const Header = () => {
                     About Us
                   </li>
                   <li
-                    className='px-6 py-2 cursor-pointer hover:bg-gray-200'
+                    className='px-6 py-2 cursor-pointer hover:bg-gray-200 text-white'
                     onClick={(e) => {
                       e.stopPropagation();
                       handleNavClick('/Career');

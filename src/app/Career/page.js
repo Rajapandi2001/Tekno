@@ -17,7 +17,7 @@ export default function Home() {
 
                 <div className="relative flex flex-col items-center justify-center h-screen px-4 text-center text-white md:px-0">
                     {/* Badge */}
-                    <div className="relative z-10 mb-4 px-3 py-1.5 rounded-full bg-[#ffffff1f] text-xs font-semibold uppercase tracking-widest text-white md:text-sm md:mb-6">
+                    <div className="relative z-10 mb-4 px-3 py-1.5 rounded-full bg-[#ffffff3b] text-xs font-semibold uppercase tracking-widest text-white md:text-sm md:mb-6 shadow-md">
                         <span className="text-lime-200">◉</span> Careers at Tekno Spot
                     </div>
 
@@ -30,11 +30,6 @@ export default function Home() {
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
                         We are on the lookout for talented individuals motivated by a desire to make a difference through technology.
                     </p>
-
-                    {/* Call-to-action Button */}
-                    <button className="relative z-10 px-8 py-2 text-sm font-semibold text-white bg-yellow-500 rounded-full shadow-lg hover:bg-[#f3f044c3] transition md:text-lg md:px-12">
-                        Mail Us
-                    </button>
                 </div>
 
             </div>
