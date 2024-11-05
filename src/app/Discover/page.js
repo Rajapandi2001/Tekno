@@ -60,7 +60,7 @@ const WhoWeAre = () => {
                 data-aos-duration="1000"
                 className="px-4 sm:px-8 md:px-16 lg:px-20 text-center mt-6">
                 <p className="text-sm sm:text-base md:text-xl leading-relaxed sm:leading-loose mb-4">
-                    Imagine a team of tech enthusiasts who genuinely love what they do, helping people across various industries fall in love with their businesses! Thats us  not just coding pros but partners in making life simpler. Whether you're in healthcare, finance, or running a startup, we have got your back.
+                    Imagine a team of tech enthusiasts who genuinely love what they do, helping people across various industries fall in love with their businesses! Thats us  not just coding pros but partners in making life simpler. Whether you are in healthcare, finance, or running a startup, we have got your back.
                 </p>
                 <p className="text-sm sm:text-base md:text-xl leading-relaxed sm:leading-loose mb-4">
                     At Tekno Spot, were a team of software experts constantly pushing the envelope, making cutting-edge technology feel like a casual coffee chat. No jargon, no hassle  just straightforward, effective solutions that work like magic. From making code simple to delivering a smooth user experience, we are all about driving innovation forward.
