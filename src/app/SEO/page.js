@@ -30,7 +30,7 @@ const Page = () => {
 
                     {/* Subheading */}
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
-                    "SEO is not about ranking higher, its about ranking smarter."
+                    SEO is not about ranking higher, its about ranking smarter
                     </p>
                 </div>
 

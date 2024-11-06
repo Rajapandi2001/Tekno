@@ -30,7 +30,7 @@ const Page = () => {
 
                     {/* Subheading */}
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
-                    "Transforming raw video footage into polished and engaging videos."
+                    Transforming raw video footage into polished and engaging videos
                     </p>
                 </div>
 

@@ -30,7 +30,7 @@ const Page = () => {
 
                     {/* Subheading */}
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
-                    "Web development is the art of turning ideas into digital experiences."
+                    Web development is the art of turning ideas into digital experiences
                     </p>
                 </div>
 
@@ -63,7 +63,7 @@ const Page = () => {
                     </p>
                     <p className="text-gray-600 mb-6 text-sm sm:text-base">
 
-                        Whether you're a start-up dreaming big or an established enterprise seeking a digital facelift, we've got the tools, skills, and a sprinkle of magic to make it happen. From sleek and responsive designs to robust backend functionalities, we've got your back!
+                        Whether you are a start-up dreaming big or an established enterprise seeking a digital facelift, we are got the tools, skills, and a sprinkle of magic to make it happen. From sleek and responsive designs to robust backend functionalities, we are got your back!
                     </p>
 
                     {/* Features Section */}

@@ -30,7 +30,7 @@ const Page = () => {
 
                     {/* Subheading */}
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
-                    "Designs that make your brand unforgettable."
+                    Designs that make your brand unforgettable
                     </p>
                 </div>
 

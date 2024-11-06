@@ -30,10 +30,9 @@ const Page = () => {
 
                     {/* Subheading */}
                     <p className="relative z-10 mb-6 text-sm leading-relaxed md:text-base lg:text-lg">
-                        "Great apps are built on seamless functionality and intuitive design."
+                        Great apps are built on seamless functionality and intuitive design
                     </p>
                 </div>
-
             </div>
             <section
                 data-aos="fade-up"
@@ -56,10 +55,10 @@ const Page = () => {
                         AT YOUR FINGERTIPS
                     </h2>
                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                        Bringing The World's Finest to Your Phones
+                        Bringing The Worlds Finest to Your Phones
                     </h3>
                     <p className="text-gray-600 mb-6 text-sm sm:text-base">
-                        At Tekno Spot, we're intent on crafting and stepping into new worlds with ease. We are at the heart of innovation as we introduce you to the pulsating world of app development - where efficiency meets excellence. We're not just a tech company; we're the architects of the digital future, weaving lines of code into seamless experiences that redefine the way we live, work, and play.
+                        At Tekno Spot, we are intent on crafting and stepping into new worlds with ease. We are at the heart of innovation as we introduce you to the pulsating world of app development - where efficiency meets excellence. We are not just a tech company. we are the architects of the digital future, weaving lines of code into seamless experiences that redefine the way we live, work, and play.
                     </p>
 
                     {/* Features Section */}
@@ -165,7 +164,7 @@ const Page = () => {
                                 Accelerated Growth with iOS
                             </h2>
                             <p className="text-gray-600 leading-relaxed">
-                                Apple's iOS ecosystem demands precision, and we rise to the challenge. Our team is
+                                Apple iOS ecosystem demands precision, and we rise to the challenge. Our team is
                                 equipped with the expertise to create immersive experiences that resonate with the
                                 elegance Apple is known for. Whether its harnessing the latest features of iOS or
                                 ensuring a flawless user journey, we meticulously craft apps that elevate your brand on

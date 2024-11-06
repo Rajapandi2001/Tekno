@@ -24,7 +24,7 @@ export default function Web() {
         <div className="flex flex-col items-center text-center p-6 bg-[#ffffff44] rounded-lg shadow-lg transition-transform transform hover:scale-105">
           <AiOutlineCloudServer className="text-6xl mb-4" />
           <h3 className="text-xl font-bold mb-2">Web Hosting Services</h3>
-          <p>We've got your websites back  providing top-notch web hosting services with a side of tech-savvy charm.</p>
+          <p>We are got your websites back  providing top-notch web hosting services with a side of tech-savvy charm.</p>
         </div>
 
         {/* Website Maintenance */}
