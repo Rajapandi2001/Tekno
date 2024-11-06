@@ -132,7 +132,7 @@ const Header = () => {
               {item.hasDropdown && mobileDropdown === item.id && (
                 <ul className='bg-[#ffffff0d] rounded-md shadow-md mt-2 py-2 z-20'>
                   <li
-                    className='px-6 py-2 cursor-pointer hover:bg-gray-200 text-white '
+                    className='px-6 py-2 cursor-pointer hover:bg-black text-white '
                     onClick={(e) => {
                       e.stopPropagation();
                       handleNavClick('/AboutUs');
@@ -141,7 +141,7 @@ const Header = () => {
                     About Us
                   </li>
                   <li
-                    className='px-6 py-2 cursor-pointer hover:bg-gray-200 text-white'
+                    className='px-6 py-2 cursor-pointer hover:bg-black text-white'
                     onClick={(e) => {
                       e.stopPropagation();
                       handleNavClick('/Career');
