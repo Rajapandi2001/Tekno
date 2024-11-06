@@ -59,7 +59,7 @@ const Page = () => {
                     Our Social Media Marketing Services Include:
                     </h3>
                     <p className="text-gray-600 mb-6 text-sm sm:text-base">
-                    At Tekno Spot, we understand the power of social media in connecting with audiences and building lasting relationships. Our Social Media Marketing services are designed to boost your online presence, increase engagement, and turn followers into loyal customers. With a deep understanding of trends and platforms, we create tailored strategies that align with your brand's goals and target audience.
+                    At Tekno Spot, we understand the power of social media in connecting with audiences and building lasting relationships. Our Social Media Marketing services are designed to boost your online presence, increase engagement, and turn followers into loyal customers. With a deep understanding of trends and platforms, we create tailored strategies that align with your brands goals and target audience.
                     </p>
 
                     {/* Features Section */}
