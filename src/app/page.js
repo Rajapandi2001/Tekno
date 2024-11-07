@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* Main Section with Text and Image */}
-      <div className=" flex justify-center items-center relative w-full  h-[600px] overflow-hidden">
+      <div className=" flex justify-center items-center relative w-full  h-[650px] overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay

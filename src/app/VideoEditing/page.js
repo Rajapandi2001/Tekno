@@ -77,12 +77,12 @@ const Page = () => {
                         <div className="flex items-center space-x-2">
                             <Image
                                 src="\img\styleclick.2aa3bac1.svg"
-                                alt="Social Media Video Editing Icon"
+                                alt="Motion Graphics and Animation Icon"
                                 width={24}
                                 height={24}
                                 className="text-blue-600"
                             />
-                            <span className="text-sm sm:text-base">Social Media Video Editing</span>
+                            <span className="text-sm sm:text-base">Motion Graphics and Animation</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <Image
